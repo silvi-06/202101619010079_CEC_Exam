@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Edit Car</title>
+</head>
+<body>
+    <form action="/books/edit" method="post">
+        <input type="hidden" name="id" th:value="${book.id}">
+        <p>Title: <input type="text" name="title" th:value="${book.title}"></p>
+        <p>Author: <input type="text" name="author" th:value="${book.author}"></p>
+        <p>Price: <input type="text" name="price" th:value="${book.price}"></p>
+        <button type="submit">Edit Book</button>
+    </form>
+</body>
+</html>
